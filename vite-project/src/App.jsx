@@ -1,20 +1,28 @@
 import '../css/App.css'
-import Header from '../components/Header.jsx'
-import Category from '../components/Category.jsx'
-import Featured from '../components/Featured.jsx'
-import FeaturedProduct from '../components/FeaturedProduct.jsx'
-import Footer from '../components/Footer.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import Blogs from './pages/Blogs'
+import Contact from './pages/Contact'
+import Shop from './pages/Shop'
+import Signup from './pages/SingnUp'
+import NoPage from './pages/NoPage';
 
 function App() {
 
   return (
-    <div className="App">
-      <Header/>
-      <Category/>
-      <Featured/>
-      <FeaturedProduct/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blog" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="shop" element={<Shop />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

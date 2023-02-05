@@ -1,7 +1,7 @@
 import logo from '../assets/logo.avif';
 import cart from '../assets/cart.png';
-import { Nav, NavLink, NavMenu } 
-    from  "react-router-dom";
+import { Link } from "react-router-dom";
+
 function Header() {
 
   return (
@@ -13,27 +13,26 @@ function Header() {
             
             <div className="cart-options">
                 <img src={cart} alt="cart"/>
-                <button className="black-button">Login or Signup</button>
+                <button className="black-button"><Link className='button-link' to="/SignUp">Login or Sign Up</Link></button>
             </div>
         </div>
         <div className="menu">
-            
-            <Nav>
-                <NavMenu>
-                    <NavLink to="/Home">
-                        Home
-                    </NavLink>
-                    <NavLink to="/Shop">
-                        Shop
-                    </NavLink>
-                    <NavLink to="/Blogs">
-                        Blogs
-                    </NavLink>
-                    <NavLink to="/Sign-up">
-                       Sign-up
-                    </NavLink>
-                </NavMenu>
-             </Nav>
+            <nav>
+                <ul>
+                    <li>
+                        <Link className="header-link" to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link className="header-link" to="/shop">Shop</Link>
+                    </li>
+                    <li>
+                        <Link className="header-link" to="/blog">Blogs</Link>
+                    </li>
+                    <li>
+                        <Link className="header-link" to="/contact">Contact</Link>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
   )
