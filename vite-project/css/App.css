@@ -18,6 +18,7 @@
     width: 40px;
     margin-right: 40px;
 }
+
 .black-button{
     width: 150px;
     height: 53px;
@@ -25,11 +26,16 @@
     color: white;
     border: none;
 }
+
+.button-link {
+    text-decoration: none;
+    color: white;
+}
 .menu{
     border-bottom: 2px #9a9696 solid;
     margin:0px 50px;
 }
-.menu ul{
+.menu nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -37,6 +43,16 @@
     align-content: center;
     column-gap: 50px;
 }
+
+.header-link {
+    text-decoration: none;
+    color: rgb(46, 38, 38);
+}
+
+.header-link:hover {
+    color: black
+}
+
 .home-category,.featured-collection,.featured-pro-section{
     display: flex;
     justify-content: space-between;
