@@ -59,6 +59,7 @@
     /* align-items: center; */
     align-content: center;
     margin:50px 50px;
+    column-gap: 50px;
 }
 .home-category p{
     text-align: center;
@@ -74,25 +75,58 @@
     margin: 5rem 7rem;
     align-items: center;
 }
-.featured-child{
-    padding-left: 50px;
-    margin-top:-20px;
-}
-.featured-child p{
-    margin-bottom:2.5em;
-    font-size: 1.1em;
-    line-height: 1.5em;
-}
-.featured-pro-section p,h3{
-    text-align:center;
-}
-.featured-pro-section h3{
-    font-weight: bold;
-}
+
 .footer{
     padding:2em;
     text-align: center;
     border-top: 2px #9a9696 solid;
     margin:0px 50px;
     font-weight: bold;
+}
+.shop-page {
+    padding: 50px 50px;
+}
+.shop-page h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.shop-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    justify-content: flex-start;
+}
+
+.card {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 50px;
+}
+  
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card img {
+    width:100%;
+}
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card button:hover {
+    opacity: 0.7;
 }

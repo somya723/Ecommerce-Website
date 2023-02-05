@@ -10,7 +10,6 @@ function Home() {
             <Category/>
             <Featured/>
             <FeaturedProduct/>
-            <Footer/>
         </>  
     );
 }
