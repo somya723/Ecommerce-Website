@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductCard from '../../components/ProductCard'
-import Footer from '../../components/Footer'
+
 function Shop() {
 
     const productList = [];
