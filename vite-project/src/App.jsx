@@ -5,8 +5,9 @@ import Home from './pages/Home'
 import Blogs from './pages/Blogs'
 import Contact from './pages/Contact'
 import Shop from './pages/Shop'
-import Signup from './pages/SingnUp'
+import Signup from './pages/SignUp'
 import NoPage from './pages/NoPage';
+import Login from './pages/Login';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="shop" element={<Shop />} />
           <Route path="signup" element={<Signup />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
